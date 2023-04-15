@@ -1,0 +1,23 @@
+SQL> spool C:\Users\Abhishek\Desktop\Exp_1;
+
+SQL> conn sys as sysdba;
+Enter password:
+Connected.
+
+SQL> show user;
+USER is "SYS"
+
+
+SQL> create user Abhi identified by Abhi;
+
+User created.
+
+
+SQL> grant all privileges to Abhi;
+
+Grant succeeded.
+
+SQL> conn Abhi/Abhi;
+Connected.
+SQL> show user;
+USER is "ABHI"
